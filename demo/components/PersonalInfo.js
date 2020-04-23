@@ -13,8 +13,8 @@ export default class PersonalInfo extends React.Component<Object, Object> {
 
       if (session) {
         auth
-          .fetch('https://pedro1.localhost:8442')
-          .then(() => console.log('shiiiiit'))
+          .fetch('https://pedro1.localhost:8442/private')
+          .then(() => console.log('worked'))
       }
     })
   }

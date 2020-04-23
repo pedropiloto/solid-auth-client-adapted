@@ -1,6 +1,6 @@
 {
-  "name": "solid-auth-client",
-  "version": "2.4.1",
+  "name": "solid-auth-client-adapted",
+  "version": "1.0.0",
   "description": "Opaquely authenticates solid clients",
   "main": "lib/index-default.js",
   "browser": "browser/index.js",
@@ -17,15 +17,7 @@
     "dist-lib",
     "dist-popup"
   ],
-  "repository": "git@github.com:solid/solid-auth-client.git",
-  "author": "Daniel Friedman <dfriedman58@gmail.com>",
-  "contributors": [
-    {
-      "name": "Ruben Verborgh",
-      "email": "ruben@verborgh.org",
-      "url": "https://ruben.verborgh.org/"
-    }
-  ],
+  "repository": "git@github.com:pedropiloto/solid-auth-client-adapted.git",
   "license": "MIT",
   "scripts": {
     "start:lib": "webpack-dev-server --env development --config=./webpack/webpack.lib.config.js",
