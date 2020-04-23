@@ -23,6 +23,7 @@ const instance = new SolidAuthClient()
 
 const oidcConfiguration = {
   issuer: 'https://localhost',
+  gateway: 'https://gateway:8080',
   jwks_uri: 'https://localhost/jwks',
   registration_endpoint: 'https://localhost/register',
   authorization_endpoint: 'https://localhost/authorize',

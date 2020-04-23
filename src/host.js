@@ -14,7 +14,7 @@ export function getHost(storage: AsyncStorage): string => Promise<?host> {
   return async url => {
     const { host } = new URL(url)
     const session = await getSession(storage)
-    if (session && host === new URL(session.idp).host) {
+    if (session && host === new URL(session.gateway).host) {
       return { url: host, requiresAuth: true }
     }
     const { hosts } = await getData(storage)
