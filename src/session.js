@@ -5,6 +5,7 @@ import { getData, updateStorage } from './storage'
 
 export type webIdOidcSession = {
   idp: string,
+  gateway: string,
   webId: string,
   accessToken: string,
   idToken: string,

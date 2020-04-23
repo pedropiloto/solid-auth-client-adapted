@@ -1,8 +1,8 @@
 // @flow
 /* global Response */
 import * as authorization from 'auth-header'
-import RelyingParty from '@solid/oidc-rp'
-import PoPToken from '@solid/oidc-rp/lib/PoPToken'
+import RelyingParty from 'oidc-rp-adapted/lib'
+import PoPToken from 'oidc-rp-adapted/lib/PopToken'
 
 import type { loginOptions } from './solid-auth-client'
 import { currentUrl, navigateTo, toUrlString } from './url-util'
@@ -52,7 +52,8 @@ export async function currentSession(
     return {
       ...session,
       webId: session.idClaims.sub,
-      idp: session.issuer
+      idp: session.issuer,
+      gateway: session.gateway
     }
   } catch (err) {
     console.warn('Error finding a WebID-OIDC session')

@@ -2,7 +2,7 @@ declare module 'auth-header' {
   declare export function parse(wwwAuthHeader: string): Object
 }
 
-declare module '@solid/oidc-rp' {
+declare module 'oidc-rp-adapted' {
   declare export default class RelyingParty {
     provider: { url: string },
     registration: { redirect_uris: Array<String> },
